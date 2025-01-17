@@ -11,7 +11,6 @@ import LoginPopUp from "./components/LoginPopUp/LoginPopUp";
 import { AdminContext } from "./Context/AdminContext";
 
 const App = () => {
-<<<<<<< HEAD
   const { token, setToken, showLogin, setShowLogin } = useContext(AdminContext);
   useEffect(() => {
     if (token) {
@@ -20,10 +19,6 @@ const App = () => {
       setShowLogin(true);
     }
   }, [token]);
-
-=======
-  const url = 'https://homeit-mern-backend.onrender.com';
->>>>>>> bcfb05f52eb452747b713ae1f7e180141dddef13
   return (
     <>
       {showLogin ? <LoginPopUp setShowlogin={setShowLogin} /> : <></>}

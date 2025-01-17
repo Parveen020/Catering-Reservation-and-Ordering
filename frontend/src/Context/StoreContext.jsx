@@ -4,17 +4,10 @@ import axios from "axios";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-<<<<<<< HEAD
   const [cartItem, setCartItem] = useState({});
   const url = "http://localhost:4000";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
-=======
-    const [cartItem, setCartItem] = useState({});
-    const url = "https://homeit-mern-backend.onrender.com";
-    const [token, setToken] = useState("");
-    const [food_list, setFoodList] = useState([]);
->>>>>>> bcfb05f52eb452747b713ae1f7e180141dddef13
 
   const saveCartToLocalStorage = (cart) => {
     localStorage.setItem("cartItem", JSON.stringify(cart));
