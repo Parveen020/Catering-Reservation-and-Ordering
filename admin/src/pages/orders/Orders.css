@@ -1,0 +1,77 @@
+.Order{
+    margin-top:40px;
+    margin-left: 80px;
+}
+
+.Order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 1fr;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid tomato; /* Light tomato color for softer border */
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #505050;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+}
+
+.Order-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.Order-item-food {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Order-item-name {
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.Order-item-address {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #777;
+}
+
+.Order-item select {
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.Order-item p {
+    margin: 4px 0;
+}
+
+.Order-item-phone {
+    font-size: 13px;
+    color: #333;
+}
+
+@media(max-width: 1000px) {
+    .Order-item {
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        padding: 15px 8px;
+    }
+
+    .Order-item select {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .Order-item img {
+        width: 40px;
+    }
+}
